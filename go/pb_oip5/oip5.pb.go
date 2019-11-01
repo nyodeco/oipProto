@@ -6,7 +6,7 @@ package pb_oip5
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import oipProto_templates "github.com/oipwg/proto/go/pb_templates"
+import oipProto_templates "github.com/oipwg/proto/go/pb_oip5/pb_templates"
 import oipProto "github.com/oipwg/proto/go/pb_oip"
 
 // Reference imports to suppress errors if they are not otherwise used.
