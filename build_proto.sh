@@ -7,7 +7,7 @@ popd || exit
 
 echo "Building oip5 proto files"
 pushd ./src/oip5 || exit
-protoc --go_out="$GOPATH/src" -I=. -I="$GOPATH/src/github.com/oipwg/proto/src/oip" \
+protoc --go_out="$GOPATH/src" -I=. -I="$GOPATH/src/github.com/oipwg/proto/src/oip" -I="$GOPATH/src/github.com/bitspill/protoPatch" \
   edit.proto NormalizeRecord.proto NormalizeRecord.proto oip5.proto Record.proto
 popd || exit
 
