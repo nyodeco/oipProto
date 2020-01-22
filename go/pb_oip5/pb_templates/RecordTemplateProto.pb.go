@@ -7,10 +7,12 @@ Package pb_templates is a generated protocol buffer package.
 It is generated from these files:
 	RecordTemplateProto.proto
 	tmpl_433C2783.proto
+	tmpl_6E6D471D.proto
 
 It has these top-level messages:
 	RecordTemplateProto
 	Tmpl_433C2783
+	Tmpl_6E6D471D
 */
 package pb_templates
 

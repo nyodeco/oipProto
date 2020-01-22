@@ -4,12 +4,15 @@ package oipProto.oip5;
 
 option go_package = "github.com/oipwg/proto/go/pb_oip5;pb_oip5";
 
-import "Record.proto";
+import "templates/RecordTemplateProto.proto";
 import "txid.proto";
 import "patch.proto";
 
 
 message EditProto {
     oipProto.Txid reference = 1;
-    patch.ProtoPatch patch = 2;
+    oneof mod {
+        patch.ProtoPatch patch = 2;
+        templates.RecordTemplateProto template = 3;
+    }
 }

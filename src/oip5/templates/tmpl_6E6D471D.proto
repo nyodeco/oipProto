@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package oipProto.templates;
+
+message tmpl_6E6D471D {
+    string text = 1;
+    Options enum = 2;
+
+    enum Options {
+        OPTIONS_UNDEFINED = 0;
+        OPTIONS_ONE = 1;
+        OPTIONS_TWO = 2;
+        OPTIONS_THREE = 3;
+    }
+}

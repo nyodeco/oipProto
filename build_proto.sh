@@ -7,13 +7,26 @@ popd || exit
 
 echo "Building oip5 proto files"
 pushd ./src/oip5 || exit
-protoc --go_out="$GOPATH/src" -I=. -I="$GOPATH/src/github.com/oipwg/proto/src/oip" -I="$GOPATH/src/github.com/bitspill/protoPatch" \
+protoc --go_out="$GOPATH/src" -I=. -I="$GOPATH/src/github.com/oipwg/proto/src/oip" \
+  -I="$GOPATH/src/github.com/bitspill/protoPatch" \
   edit.proto NormalizeRecord.proto NormalizeRecord.proto oip5.proto Record.proto
 popd || exit
 
 echo "Building oip5 template proto files"
 pushd ./src/oip5/templates || exit
-protoc --go_out="$GOPATH/src"  RecordTemplateProto.proto tmpl_433C2783.proto
+protoc --go_out="$GOPATH/src" -I=. -I="$GOPATH/src/github.com/oipwg/proto/src/oip" \
+  -I="$GOPATH/src/github.com/bitspill/protoPatch" RecordTemplateProto.proto tmpl_433C2783.proto \
+  tmpl_6E6D471D.proto
+popd || exit
+
+echo "Building oip5 template P descriptor"
+pushd ./src/oip5/templates || exit
+if [[ -f p.proto ]]; then
+  protoc --descriptor_set_out=p.dso -I=. -I="$GOPATH/src/github.com/oipwg/proto/src/oip" \
+    -I="$GOPATH/src/github.com/bitspill/protoPatch" p.proto
+else
+  echo "p.proto does not exist"
+fi
 popd || exit
 
 echo "Building historian proto files"
