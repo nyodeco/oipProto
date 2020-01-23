@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package oipProto.templates;
 
+option go_package = "github.com/oipwg/proto/go/pb_oip5/pb_templates;pb_templates";
+
 message P {
 
 }
