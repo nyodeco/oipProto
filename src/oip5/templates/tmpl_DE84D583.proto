@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package oipProto.templates;
+
+option go_package = "github.com/oipwg/proto/go/pb_oip5/pb_templates;pb_templates";
+
+import "txid.proto";
+
+// SimpleCoinSale
+// de84d583503894e2e865a0020e8873ec20064461c6de03136b973e42d1dcdb64
+message tmpl_DE84D583 {
+    oipProto.Txid coin = 1;
+    string destination = 2;
+    uint32 amount = 3;
+    uint32 scale = 4;
+    uint32 duration = 5;
+    bool indefinite = 6;
+}

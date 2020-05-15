@@ -15,8 +15,7 @@ popd || exit
 echo "Building oip5 template proto files"
 pushd ./src/oip5/templates || exit
 protoc --go_out="$GOPATH/src" -I=. -I="$GOPATH/src/github.com/oipwg/proto/src/oip" \
-  -I="$GOPATH/src/github.com/bitspill/protoPatch" RecordTemplateProto.proto tmpl_433C2783.proto \
-  tmpl_6E6D471D.proto
+  -I="$GOPATH/src/github.com/bitspill/protoPatch" RecordTemplateProto.proto tmpl_*.proto
 popd || exit
 
 echo "Building oip5 template P descriptor"

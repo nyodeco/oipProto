@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package oipProto.templates;
+
+option go_package = "github.com/oipwg/proto/go/pb_oip5/pb_templates;pb_templates";
+
+// Coin
+// 29f9671160b8f6f0ab11cebd8911725262bc7180302f4ce50556c091f7e26696
+message tmpl_29F96711 {
+    string name = 1;
+    string ticker = 2;
+    string source = 3;
+    string homepage = 4;
+}

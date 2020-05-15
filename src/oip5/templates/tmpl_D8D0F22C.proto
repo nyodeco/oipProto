@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package oipProto.templates;
+
+option go_package = "github.com/oipwg/proto/go/pb_oip5/pb_templates;pb_templates";
+
+import "txid.proto";
+
+// CommercialContent
+// d8d0f22c79f3d5670874a4f0e439b7cdc130dd213759e56eb8d2f3081e0e7dda
+message tmpl_D8D0F22C {
+    string location = 1;
+    Network network = 2;
+    repeated oipProto.Txid terms = 3;
+    repeated fixed32 embedded_terms = 4;
+
+    enum Network {
+        NETWORK_UNDEFINED = 0;
+        NETWORK_IPFS = 1;
+        NETWORK_BITTORRENT = 2;
+        NETWORK_SIA = 3;
+        NETWORK_STORJ = 4;
+    }
+}

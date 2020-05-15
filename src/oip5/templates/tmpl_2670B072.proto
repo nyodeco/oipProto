@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package oipProto.templates;
+
+option go_package = "github.com/oipwg/proto/go/pb_oip5/pb_templates;pb_templates";
+
+import "txid.proto";
+
+// Song
+// 2670b072c07eda38a423bd1dbadc629df200d644ff98fc2768aaa00203c1efda
+message tmpl_2670B072 {
+    string title = 1;
+    string genre = 2;
+    uint32 duration = 3;
+    string artist = 4;
+}
