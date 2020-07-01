@@ -41,7 +41,7 @@ var Tmpl_D8D0F22C_Network_value = map[string]int32{
 func (x Tmpl_D8D0F22C_Network) String() string {
 	return proto.EnumName(Tmpl_D8D0F22C_Network_name, int32(x))
 }
-func (Tmpl_D8D0F22C_Network) EnumDescriptor() ([]byte, []int) { return fileDescriptor5, []int{0, 0} }
+func (Tmpl_D8D0F22C_Network) EnumDescriptor() ([]byte, []int) { return fileDescriptor6, []int{0, 0} }
 
 // CommercialContent
 // d8d0f22c79f3d5670874a4f0e439b7cdc130dd213759e56eb8d2f3081e0e7dda
@@ -55,7 +55,7 @@ type Tmpl_D8D0F22C struct {
 func (m *Tmpl_D8D0F22C) Reset()                    { *m = Tmpl_D8D0F22C{} }
 func (m *Tmpl_D8D0F22C) String() string            { return proto.CompactTextString(m) }
 func (*Tmpl_D8D0F22C) ProtoMessage()               {}
-func (*Tmpl_D8D0F22C) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
+func (*Tmpl_D8D0F22C) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
 
 func (m *Tmpl_D8D0F22C) GetLocation() string {
 	if m != nil {
@@ -90,9 +90,9 @@ func init() {
 	proto.RegisterEnum("oipProto.templates.Tmpl_D8D0F22C_Network", Tmpl_D8D0F22C_Network_name, Tmpl_D8D0F22C_Network_value)
 }
 
-func init() { proto.RegisterFile("tmpl_D8D0F22C.proto", fileDescriptor5) }
+func init() { proto.RegisterFile("tmpl_D8D0F22C.proto", fileDescriptor6) }
 
-var fileDescriptor5 = []byte{
+var fileDescriptor6 = []byte{
 	// 307 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x64, 0x90, 0x51, 0x4b, 0x3a, 0x41,
 	0x14, 0xc5, 0xff, 0xeb, 0xfa, 0xcf, 0xba, 0xa6, 0x8d, 0x37, 0x0a, 0xf1, 0x69, 0x91, 0x82, 0xed,

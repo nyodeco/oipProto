@@ -25,7 +25,7 @@ type Tmpl_2670B072 struct {
 func (m *Tmpl_2670B072) Reset()                    { *m = Tmpl_2670B072{} }
 func (m *Tmpl_2670B072) String() string            { return proto.CompactTextString(m) }
 func (*Tmpl_2670B072) ProtoMessage()               {}
-func (*Tmpl_2670B072) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
+func (*Tmpl_2670B072) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
 
 func (m *Tmpl_2670B072) GetTitle() string {
 	if m != nil {
@@ -59,9 +59,9 @@ func init() {
 	proto.RegisterType((*Tmpl_2670B072)(nil), "oipProto.templates.tmpl_2670B072")
 }
 
-func init() { proto.RegisterFile("tmpl_2670B072.proto", fileDescriptor1) }
+func init() { proto.RegisterFile("tmpl_2670B072.proto", fileDescriptor2) }
 
-var fileDescriptor1 = []byte{
+var fileDescriptor2 = []byte{
 	// 190 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x2e, 0xc9, 0x2d, 0xc8,
 	0x89, 0x37, 0x32, 0x33, 0x37, 0x70, 0x32, 0x30, 0x37, 0xd2, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17,

@@ -37,7 +37,7 @@ var Tmpl_6E6D471D_Options_value = map[string]int32{
 func (x Tmpl_6E6D471D_Options) String() string {
 	return proto.EnumName(Tmpl_6E6D471D_Options_name, int32(x))
 }
-func (Tmpl_6E6D471D_Options) EnumDescriptor() ([]byte, []int) { return fileDescriptor8, []int{0, 0} }
+func (Tmpl_6E6D471D_Options) EnumDescriptor() ([]byte, []int) { return fileDescriptor5, []int{0, 0} }
 
 type Tmpl_6E6D471D struct {
 	Text string                `protobuf:"bytes,1,opt,name=text" json:"text,omitempty"`
@@ -47,7 +47,7 @@ type Tmpl_6E6D471D struct {
 func (m *Tmpl_6E6D471D) Reset()                    { *m = Tmpl_6E6D471D{} }
 func (m *Tmpl_6E6D471D) String() string            { return proto.CompactTextString(m) }
 func (*Tmpl_6E6D471D) ProtoMessage()               {}
-func (*Tmpl_6E6D471D) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{0} }
+func (*Tmpl_6E6D471D) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
 
 func (m *Tmpl_6E6D471D) GetText() string {
 	if m != nil {
@@ -68,9 +68,9 @@ func init() {
 	proto.RegisterEnum("oipProto.templates.Tmpl_6E6D471D_Options", Tmpl_6E6D471D_Options_name, Tmpl_6E6D471D_Options_value)
 }
 
-func init() { proto.RegisterFile("tmpl_6E6D471D.proto", fileDescriptor8) }
+func init() { proto.RegisterFile("tmpl_6E6D471D.proto", fileDescriptor5) }
 
-var fileDescriptor8 = []byte{
+var fileDescriptor5 = []byte{
 	// 224 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x2e, 0xc9, 0x2d, 0xc8,
 	0x89, 0x37, 0x73, 0x35, 0x73, 0x31, 0x31, 0x37, 0x74, 0xd1, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17,

@@ -11,3 +11,5 @@ type SimpleCoinSale = dynamic.Message
 type CommercialContent = dynamic.Message
 
 type Song = dynamic.Message
+
+type Basic = dynamic.Message

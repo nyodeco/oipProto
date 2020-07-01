@@ -27,7 +27,7 @@ type Tmpl_DE84D583 struct {
 func (m *Tmpl_DE84D583) Reset()                    { *m = Tmpl_DE84D583{} }
 func (m *Tmpl_DE84D583) String() string            { return proto.CompactTextString(m) }
 func (*Tmpl_DE84D583) ProtoMessage()               {}
-func (*Tmpl_DE84D583) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
+func (*Tmpl_DE84D583) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{0} }
 
 func (m *Tmpl_DE84D583) GetCoin() *oipProto.Txid {
 	if m != nil {
@@ -75,9 +75,9 @@ func init() {
 	proto.RegisterType((*Tmpl_DE84D583)(nil), "oipProto.templates.tmpl_DE84D583")
 }
 
-func init() { proto.RegisterFile("tmpl_DE84D583.proto", fileDescriptor6) }
+func init() { proto.RegisterFile("tmpl_DE84D583.proto", fileDescriptor7) }
 
-var fileDescriptor6 = []byte{
+var fileDescriptor7 = []byte{
 	// 239 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x8f, 0x41, 0x4b, 0xc3, 0x40,
 	0x10, 0x85, 0x59, 0x6d, 0x43, 0x9d, 0x52, 0x0f, 0xab, 0xc8, 0xd2, 0x83, 0x2c, 0x3d, 0xe5, 0x94,
