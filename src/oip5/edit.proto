@@ -4,7 +4,7 @@ package oipProto.oip5;
 
 option go_package = "github.com/oipwg/proto/go/pb_oip5;pb_oip5";
 
-import "templates/RecordTemplateProto.proto";
+import "templates/RecorgodTemplateProto.proto";
 import "txid.proto";
 import "patch.proto";
 
